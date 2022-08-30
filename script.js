@@ -115,7 +115,8 @@ calculateButton.addEventListener("click", clickHandler)
 
 function clickHandler(){
     var bdayStr=inputDate.value;
-    if (bdayStr !=""){
+    if(bdayStr===""){output.innerText="🤢🤢Date can't be empty"}
+   if (bdayStr!=""){
         var listOfDate=bdayStr.split("-");
        var date={
         day: Number(listOfDate[2]),
@@ -127,7 +128,7 @@ function clickHandler(){
         output.innerText="Yes, your birthday is palindrome 😄😄"
        } else {
         var [counter, nextDate]=getNextPalindrome(date);
-        output.innerText="😭 😭 The next palindrome is "+nextDate.day+"-"+nextDate.month+"-"+nextDate.year+" and its after "+counter+" days"
+        output.innerText="😭 😭 The next palindrome is on "+nextDate.day+"-"+nextDate.month+"-"+nextDate.year+" and its after "+counter+" days"
        }   
     }
 }
