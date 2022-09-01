@@ -11,6 +11,8 @@ body{
     font-family: 'Merriweather', serif;
     background-color: var(--primary-color);
     color: var(--sec-color);
+    max-width: 70%;
+    margin: auto;
     
 }
 h1{
@@ -25,6 +27,8 @@ input{
     padding: 0.3rem;
     margin: auto;
     cursor: pointer;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 button{
     background-color: var(--sec-color);
@@ -38,6 +42,9 @@ button{
 #output{
    color: var(--sec-color);
    text-shadow: 0px 0px;
+   background-color: var(--off-white);
+   border-radius: 3rem;
+   padding: 2rem;
 }
 .list-non-bullet{
     list-style: none;
